@@ -16,7 +16,7 @@ then you can do in brower:
 
 ```
 http://127.0.0.1:8080
-![image](https://github.com/hyd998877/skynet_webserver/blob/master/doc/pic.jpg)
+![image](https://raw.githubusercontent.com/hyd998877/skynet_webserver/master/doc/pic.jpg)
 
 ```
 the example is in test/main.lua
