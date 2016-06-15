@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" media="all" rel="stylesheet">
+    </head>
+    <body>
+        <img src="img/1.jpg">
+        <div>
+            <div>defaut: admin admin</div>
+            Name: <input type="text" id="Name">
+            Pwd: <input type="password" id="Pwd">
+            <button type="button" onclick="btn_click()">send</button>
+        </div>
+    </body>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        function btn_click() {
+            if($("#Name")[0].value == '' || $("#Pwd")[0].value == '')
+            {
+                alert("name or pwd is null");
+                return;
+            }
+            $.get("/login?"+"name="+$("#Name")[0].value+"&pwd="+$("#Pwd")[0].value,
+                function(data,status){
+                  alert("login：" + data);
+                }
+            );
+        }
+    </script>
+  </html>

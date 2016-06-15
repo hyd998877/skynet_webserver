@@ -1,0 +1,24 @@
+root = "./skynet/"
+thread = 8
+logger = nil
+logpath = "."
+harbor = 0
+start = "main"	-- main script
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+luaservice = root.."service/?.lua;".."lualib/?.lua;"..root.."lualib/?.lua;".."test/?.lua;"
+lualoader = root.."lualib/loader.lua"
+snax = "lualib/?.lua;"..root.."lualib/?.lua"
+-- snax_interface_g = "snax_g"
+cpath = root.."cservice/?.so;".."luaclib/?.so;"..root.."luaclib/?.so;"
+-- daemon = "./skynet.pid"
+
+-- 将添加到 package.path 中的路径，供 require 调用。
+lua_path = root .. "lualib/?.lua;" ..
+		   "./lualib/?.lua"
+
+-- 将添加到 package.cpath 中的路径，供 require 调用。
+lua_cpath = root .. "luaclib/?.so;" .. "./luaclib/?.so"
+
+host = "120.25.2.147"
+port = 8080
+www  = "www/"
