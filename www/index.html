@@ -7,6 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" media="all" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="./css/ui-lightness/jquery-ui-1.8.21.custom.css">   
+    
+        <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
         <img src="img/1.jpg">
@@ -17,7 +22,12 @@
             <button type="button" onclick="btn_click()">send</button>
         </div>
     </body>
-    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script src="js/libs/jQuery-2.1.4.min.js"></script>
+    <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="js/md5.js"></script>
     <script type="text/javascript">
         function btn_click() {
             if($("#Name")[0].value == '' || $("#Pwd")[0].value == '')
