@@ -19,6 +19,6 @@ lua_path = root .. "lualib/?.lua;" ..
 -- 将添加到 package.cpath 中的路径，供 require 调用。
 lua_cpath = root .. "luaclib/?.so;" .. "./luaclib/?.so"
 
-host = "120.25.2.147"
+host = "0.0.0.0"
 port = 8080
 www  = "www/"
